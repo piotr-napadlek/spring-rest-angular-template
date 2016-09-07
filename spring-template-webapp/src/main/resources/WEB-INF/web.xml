@@ -26,9 +26,7 @@
     </listener>
 
     <welcome-file-list>
-        <welcome-file>/templates/home.html</welcome-file>
-        <welcome-file>/classes/templates/home.html</welcome-file>
-        <welcome-file>/WEB-INF/classes/templates/home.html</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
     <servlet-mapping>
