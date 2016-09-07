@@ -70,6 +70,11 @@
                         </manifest>
                     </archive>
                     <webXml>src\main\resources\WEB-INF\web.xml</webXml>
+                    <webResources>
+                        <resource>
+                            <directory>${js.client.dir}/dist</directory>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
             <plugin>
