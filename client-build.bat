@@ -1,5 +1,5 @@
-cd spring-template-webapp/src/main/client
+cd client
 call npm install
 call gulp clean
 call gulp build:dist
-cd ../../../..
+cd ..
