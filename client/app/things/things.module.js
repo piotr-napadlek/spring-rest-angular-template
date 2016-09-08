@@ -1,9 +1,9 @@
-angular.module('app.things', ['ngRoute', 'app.main', 'app.common'])
-    .config(function ($routeProvider) {
+(function () {
     'use strict';
 
-    $routeProvider.when('/things', {
-        templateUrl: 'things/list.html',
-        controller: 'ThingsListController'
-    });
-});
+    angular.module('app.things', [
+        'ngRoute',
+        'app.common'
+    ]);
+})();
+

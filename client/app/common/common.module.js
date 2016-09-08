@@ -1,3 +1,8 @@
-angular.module('app.common', []).config(function () {
+(function () {
     'use strict';
-});
+
+    angular.module('app.common', [
+        
+    ]);
+})();
+

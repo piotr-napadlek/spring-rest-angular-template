@@ -1,12 +1,19 @@
-angular.module('app.things').controller('ThingsListController', function (restService, $scope) {
+(function () {
     'use strict';
 
-    $scope.things = [];
+    angular.module('app.things')
 
-    $scope.search = function () {
-        restService.read('rest/thing').then(function (response) {
-            angular.copy(response.data, $scope.things);
+        .controller('ThingsListController', function (restService, $scope) {
+
+            $scope.things = [];
+
+            $scope.search = function () {
+                restService.read('rest/thing').then(pasteData);
+            };
+
+            function pasteData(response) {
+                angular.copy(response.data, $scope.things);
+            }
         });
-    };
+})();
 
-});
