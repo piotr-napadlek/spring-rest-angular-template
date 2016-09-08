@@ -4,7 +4,7 @@ angular.module('app.things').controller('ThingsListController', function (restSe
     $scope.things = [];
 
     $scope.search = function () {
-        restService.read('/rest/thing').then(function (response) {
+        restService.read('rest/thing').then(function (response) {
             angular.copy(response.data, $scope.things);
         });
     };

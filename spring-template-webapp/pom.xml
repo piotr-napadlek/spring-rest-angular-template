@@ -104,7 +104,7 @@
                             <outputDirectory>${basedir}/target/spring-template-webapp-0.0.1-SNAPSHOT/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${js.client.dir}/dist/</directory>
+                                    <directory>${js.client.dir}/dist</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
@@ -148,7 +148,6 @@
         <resources>
             <resource>
                 <directory>${js.client.dir}/dist/</directory>
-                <targetPath>/client</targetPath>
             </resource>
             <resource>
                 <directory>src/main/resources</directory>

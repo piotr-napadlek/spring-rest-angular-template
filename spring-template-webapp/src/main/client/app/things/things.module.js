@@ -1,4 +1,4 @@
-angular.module('app.things', ['ngRoute', 'app.main'])
+angular.module('app.things', ['ngRoute', 'app.main', 'app.common'])
     .config(function ($routeProvider) {
     'use strict';
 
