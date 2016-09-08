@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <name>Spring multi tier application template with xml based config</name>
     <modules>
-        <module>spring-template-webapp</module>
+        <module>spring-template-rest-ws</module>
         <module>spring-template-logic</module>
         <module>spring-template-model</module>
         <module>spring-template-data-access</module>

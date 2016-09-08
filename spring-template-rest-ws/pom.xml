@@ -6,7 +6,7 @@
         <artifactId>spring-template-xml</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>spring-template-webapp</artifactId>
+    <artifactId>spring-template-rest-ws</artifactId>
     <packaging>war</packaging>
     <name>Web application module</name>
 
