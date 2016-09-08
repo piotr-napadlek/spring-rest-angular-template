@@ -26,6 +26,7 @@
     </listener>
 
     <welcome-file-list>
+        <welcome-file>/client</welcome-file>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 

@@ -38,22 +38,33 @@ git --version
 ```
 ## Running
 ### Via embedded tomcat runner
-Package is prepared to be automatically launched from command line. It simply compiles the application, and deploys it to tomcat webapp runner.
+Package is prepared to be automatically launched from command line. It simply compiles the application, and deploys it to tomcat webapp runner,
+along with building and serving frontend project.
 When all above commands are accessible, you should be able to simply run the web server with
 ```
 launch
 ```
-Executed on main directory of a package. After a successful deployment (might last several minutes)
-```
-INFO: Starting ProtocolHandler ["http-nio-9713"]
-```
-Should appear. After that you should be able to run webapp at http://localhost:9713/
-If the port 9713 seems to be in use, please change it in file tomcat-run.bat to any accessible.
+Executed on main directory of a package. After a successful deployment (might last several minutes) you should have main project page opened
+(http://localhost:9000/). If not, try http://localhost:9713/ . If the port 9713 seems to be in use, please change it in file tomcat-run.bat and in
+client/config.json to any accessible.
 ### Via IDE
-Run
+First build client project by running
+```
+client-build
+```
+Then run
 ```
 mvn clean install
 ```
-And import the project in your Java IDE of choice. Import the project and all its dependencies.
+On project basedir and import the project and all its dependencies in your Java IDE of choice.
 You can simply deploy the app to embedded jetty, by runing class pl.templates.spring.runner.EmbeddedJetty main method.
+After the launch the site is available at http://localhost:9713/
+Port can be changed in aforementioned class. Set DEFAULT_PORT to any accessible.
+### Deploy on Tomcat
+If you have a tomcat instance running, run
+```
+client-build
+mvn clean install
+```
+and copy/deploy compiled war from spring-template-webapp/target.
 

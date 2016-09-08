@@ -13,7 +13,7 @@ public class EmbeddedJetty {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EmbeddedJetty.class);
 
-    private static final int DEFAULT_PORT = 9721;
+    private static final int DEFAULT_PORT = 9713;
 
     public static void main(String[] args) throws Exception {
         new EmbeddedJetty().startJetty(DEFAULT_PORT);
