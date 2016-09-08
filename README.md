@@ -8,36 +8,52 @@ In order to run application you need couple of things.
 Get the latest version from https://maven.apache.org/download.cgi
 Installation guide is at https://maven.apache.org/install.html
 After that you should be able to run
-    mvn -version
+```
+mvn -version
+```
 In command console.
 ### NPM
 Get the latest version and install from https://nodejs.org/
 After successful installation you should be able to run
-    npm --version
+```
+npm --version
+```
 ### Bower & Gulp
 Download and install via npm:
-    npm install -g bower
-    npm install -g gulp
+```
+npm install -g bower
+npm install -g gulp
+```
 Check if their paths are set successfully with
-    bower -version
-    gulp -version
+```
+bower -version
+gulp -version
+```
 ### Git
 In order to download bower components, git command should be accessible.
 Download and install git bash for windows from https://git-for-windows.github.io/
 After installation check if git command is accessible
-    git --version
+```
+git --version
+```
 ## Running
 ### Via embedded tomcat runner
 Package is prepared to be automatically launched from command line. It simply compiles the application, and deploys it to tomcat webapp runner.
 When all above commands are accessible, you should be able to simply run the web server with
-    launch
+```
+launch
+```
 Executed on main directory of a package. After a successful deployment (might last several minutes)
-    INFO: Starting ProtocolHandler ["http-nio-9713"]
+```
+INFO: Starting ProtocolHandler ["http-nio-9713"]
+```
 Should appear. After that you should be able to run webapp at http://localhost:9713/
 If the port 9713 seems to be in use, please change it in file tomcat-run.bat to any accessible.
 ### Via IDE
 Run
-    mvn clean install
+```
+mvn clean install
+```
 And import the project in your Java IDE of choice. Import the project and all its dependencies.
 You can simply deploy the app to embedded jetty, by runing class pl.templates.spring.runner.EmbeddedJetty main method.
 
