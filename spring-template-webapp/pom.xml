@@ -15,7 +15,7 @@
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.10</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <js.client.dir>src/main/client</js.client.dir>
+        <js.client.dir>../client</js.client.dir>
     </properties>
 
     <dependencies>
@@ -101,7 +101,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/spring-template-webapp-0.0.1-SNAPSHOT/</outputDirectory>
+                            <outputDirectory>${basedir}/target/${project.artifactId}-${project.version}/</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>${js.client.dir}/dist</directory>
