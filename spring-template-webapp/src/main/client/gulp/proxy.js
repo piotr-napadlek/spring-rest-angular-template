@@ -36,7 +36,7 @@ proxy.on('upgrade', function (req, socket, head) {
  * Create middleware and define routing
  */
 function proxyMiddleware(req, res, next) {
-    if (/\/services\//.test(req.url)) {
+    if (/\/rest\//.test(req.url)) {
         proxy.web(req, res);
     } else if (/\/websocket\//.test(req.url)) {
         proxy.web(req, res);
