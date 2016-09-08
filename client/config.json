@@ -3,8 +3,8 @@
     "tmp": ".tmp",
     "dist": "dist",
     "src": "app",
-    "testSrc": "app",
-    "testOutput": "test-output"
+    "testSrc": "test",
+    "testOutput": "test/test-output"
   },
   "styles": {
     "type": "less",
