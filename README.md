@@ -29,6 +29,12 @@ Check if their paths are set successfully with
 bower -version
 gulp -version
 ```
+If you have problems with with bower or gulp, refer to:
+---
+https://github.com/bower/bower
+https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+---
+Please note that bower requires git. Refer to Usage -> Windows users part of bower tutorial.
 ### Git
 In order to download bower components, git command should be accessible.
 Download and install git bash for windows from https://git-for-windows.github.io/
@@ -48,11 +54,7 @@ Executed on main directory of a package. After a successful deployment (might la
 (http://localhost:9000/). If not, try http://localhost:9713/ . If the port 9713 seems to be in use, please change it in file tomcat-run.bat and in
 client/config.json to any accessible.
 ### Via IDE
-First build client project by running
-```
-client-build
-```
-Then run
+First build the project by running
 ```
 mvn clean install
 ```
@@ -63,7 +65,6 @@ Port can be changed in aforementioned class. Set DEFAULT_PORT to any accessible.
 ### Deploy on Tomcat
 If you have a tomcat instance running, run
 ```
-client-build
 mvn clean install
 ```
 and copy/deploy compiled war from spring-template-webapp/target.
