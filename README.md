@@ -31,8 +31,7 @@ gulp -version
 ```
 If you have problems with with bower or gulp, refer to:
 ---
-https://github.com/bower/bower
-https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+https://github.com/bower/bower and https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 ---
 Please note that bower requires git. Refer to Usage -> Windows users part of bower tutorial.
 ### Git
