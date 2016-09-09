@@ -29,10 +29,7 @@ Check if their paths are set successfully with
 bower -version
 gulp -version
 ```
-If you have problems with with bower or gulp, refer to:
----
-https://github.com/bower/bower and https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
----
+If you have problems with with bower or gulp, refer to: https://github.com/bower/bower and https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 Please note that bower requires git. Refer to Usage -> Windows users part of bower tutorial.
 ### Git
 In order to download bower components, git command should be accessible.
