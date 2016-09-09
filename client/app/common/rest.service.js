@@ -3,7 +3,7 @@
 
     angular.module('app.common').factory('restService', function ($http, currentContextPath) {
 
-        var currentContext = currentContextPath.get();
+        var currentContext = currentContextPath.get() + 'rest/';
 
         return {
             read: function (path, params) {

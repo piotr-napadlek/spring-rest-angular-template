@@ -10,9 +10,9 @@
 
         .config(function ($routeProvider) {
             $routeProvider
-                .when('/', {redirectTo: '/main/welcome'})
-                .when('/main/welcome', {templateUrl: 'main/welcome/welcome.html'})
+                .when('/', {redirectTo: '/home'})
+                .when('/home', {templateUrl: 'assets/home/home.html'})
                 .when('/things', {templateUrl: 'things/list.html'})
-                .otherwise({templateUrl: 'main/page-not-found/page-not-found.html'});
+                .otherwise({templateUrl: 'assets/page-not-found/page-not-found.html'});
         });
 })();

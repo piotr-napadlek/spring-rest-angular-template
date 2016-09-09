@@ -8,7 +8,7 @@
             $scope.things = [];
 
             $scope.search = function () {
-                restService.read('rest/thing').then(pasteData);
+                restService.read('thing').then(pasteData);
             };
 
             function pasteData(response) {
